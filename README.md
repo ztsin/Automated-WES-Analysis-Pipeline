@@ -6,7 +6,7 @@
 ```
 
 
-#--------------------------------------------Configuration-------------------------------------------------------------------------------
+#---------------------------------------Configuration------------------------------------
 
 inputDir="/path/to/data"
 file_ref="/path/to/hg19.fa"
@@ -19,7 +19,7 @@ bed_file="/path/to/Target.bed"
 anno="/path/to/annovar"
 VIC="/path/to/VIC"
 
-# ------------------------------------------------------------------------------------------------------------------Configuraiton END------
+# ----------------------------------------Configuraiton END--------------------------------
 for f in ls "$inputDir"/*.fastq.gz
 do 
 if [ $echo $f != 'ls' ]
@@ -89,3 +89,4 @@ java -jar ${VIC}/target/VIC-1.0.1.jar -table_annovar ${anno}/table_annovar.pl -i
 
 echo $f
 done
+```
